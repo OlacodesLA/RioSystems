@@ -234,7 +234,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="text-center p-6 bg-black">
+      <div class="text-center p-6 bg-gray-900">
         <span>Copyright © 2022 </span>
         <a class="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-900 to-indigo-600">
           Rio-Systems Solutions

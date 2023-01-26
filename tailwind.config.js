@@ -6,6 +6,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/solar-panel.jpg')",
+        "hero-solar": "url('/solar.jpeg')",
+        "hero-solars": "url('/cctv-water.jpeg')",
+        "hero-cctv": "url('/cctv-water-flood.jpg')",
+        "hero-cctv":
+          "url('/scanning-finger-coronavirus-contaminated-fingerprint-access-control.jpg')",
+        "hero-svg": "url('/heroe.svg')",
+        "quote-bg":
+          "url('/images/scanning-finger-coronavirus-contaminated-fingerprint-access-control.jpg')",
+      },
       colors: {
         primary: "#4900EE",
         secondary: "#87d453",

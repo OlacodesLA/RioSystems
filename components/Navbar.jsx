@@ -78,7 +78,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="hidden lg:block">
-              <div className={navbar ? "text-best" : "text-best"}>
+              <div className={navbar ? "text-best" : "text-white"}>
                 <div className="ml-10 flex items-baseline font-medium font-inter dark:text-white text-[17px] space-x-10">
                   <div
                     className=""
@@ -123,29 +123,41 @@ const Navbar = () => {
                     <div className="relative flex flex-col cursor-pointer ">
                       <div className="">
                         <div className="flex peer">
-                          <span className={navbar ? "text-best" : "text-best"}>
+                          <span className={navbar ? "text-best" : "text-white"}>
                             Services
                           </span>
                           <ChevronDownIcon className="text-primary w-5 pt-1" />
                         </div>
                         <div className="hidden peer-hover:flex hover:flex absolute gap-1  flex-col bg-primary text-sm rounded-md drop-shadow-lg w-64">
                           <Link
-                            href="/services/fire-detection-and-life-safety"
+                            href="/services/solar-panel"
                             className="px-5 py-2  hover:text-primary hover:bg-white w-full text-white"
                           >
-                            <span>Solar Panel</span>
+                            <span>Solar Systems</span>
                           </Link>
                           <Link
-                            href="/services/building-automation-systems"
+                            href="/services/access-control"
                             className="px-5 py-2  hover:text-primary hover:bg-white w-full text-white"
                           >
                             <span>Access Control Systems</span>
                           </Link>
                           <Link
-                            href="/services/mobility-solutions"
+                            href="/services/security-systems"
                             className="px-5 py-2  hover:text-primary hover:bg-white w-full text-white"
                           >
-                            <span>Security Systems</span>
+                            <span>Environmental Monitoring System (EMS)</span>
+                          </Link>
+                          <Link
+                            href="/services/security-systems"
+                            className="px-5 py-2  hover:text-primary hover:bg-white w-full text-white"
+                          >
+                            <span>Burglar & Fire Alarm System</span>
+                          </Link>
+                          <Link
+                            href="/services/security-systems"
+                            className="px-5 py-2  hover:text-primary hover:bg-white w-full text-white"
+                          >
+                            <span>Intercom System</span>
                           </Link>
                         </div>
                       </div>
@@ -189,15 +201,21 @@ const Navbar = () => {
                     </Link>
                   </div>
                   <a href="tel:2349090909090">
-                    <div className={navbar ? "text-white" : "text-white"}>
+                    <div className={navbar ? "text-white" : "text-primary"}>
                       <div
                         className=""
                         data-aos="fade-down"
                         data-aos-duration="1300"
                       >
-                        <div className="pulse">
-                          <FaPhone className="text-[14px]" />
-                        </div>
+                        {navbar ? (
+                          <div className="pulse">
+                            <FaPhone className="text-[14px]" />
+                          </div>
+                        ) : (
+                          <div className="pulsedark">
+                            <FaPhone className="text-[14px]" />
+                          </div>
+                        )}
                       </div>
                     </div>
                   </a>
@@ -352,10 +370,50 @@ const Navbar = () => {
                   <Menu.Items className="flex flex-col text-sm text-white ml-5 mt-3 space-y-1 bg-best rounded-md">
                     <Link
                       className="hover:bg-primary hover:text-white"
+                      href="/services/solar-panel"
+                    >
+                      <Menu.Item className="py-[6px] pl-5 rounded-md hover:bg-white hover:text-best">
+                        <div>Solar System</div>
+                      </Menu.Item>
+                    </Link>
+                    <Link
+                      className="hover:bg-primary hover:text-white"
+                      href="/services/access-control"
+                    >
+                      <Menu.Item className="py-[6px] pl-5 rounded-md hover:bg-white hover:text-best">
+                        <div>Access Control System</div>
+                      </Menu.Item>
+                    </Link>
+                    <Link
+                      className="hover:bg-primary hover:text-white"
                       href="/services/fire-detection-and-life-safety"
                     >
                       <Menu.Item className="py-[6px] pl-5 rounded-md hover:bg-white hover:text-best">
-                        <div>Fire Safety</div>
+                        <div>Video Surveillance</div>
+                      </Menu.Item>
+                    </Link>
+                    <Link
+                      className="hover:bg-primary hover:text-white"
+                      href="/services/fire-detection-and-life-safety"
+                    >
+                      <Menu.Item className="py-[6px] pl-5 rounded-md hover:bg-white hover:text-best">
+                        <div>EnvironmentaL Monitoring System (EMS)</div>
+                      </Menu.Item>
+                    </Link>
+                    <Link
+                      className="hover:bg-primary hover:text-white"
+                      href="/services/fire-detection-and-life-safety"
+                    >
+                      <Menu.Item className="py-[6px] pl-5 rounded-md hover:bg-white hover:text-best">
+                        <div>Birglar & Fire Alarm System</div>
+                      </Menu.Item>
+                    </Link>
+                    <Link
+                      className="hover:bg-primary hover:text-white"
+                      href="/services/fire-detection-and-life-safety"
+                    >
+                      <Menu.Item className="py-[6px] pl-5 rounded-md hover:bg-white hover:text-best">
+                        <div>Intercom System</div>
                       </Menu.Item>
                     </Link>
                   </Menu.Items>
